@@ -31,7 +31,9 @@
     <content><![CDATA[<hr>
 <p>title: 我的第一篇博客文章<br>categories: </p>
 <ul>
-<li>测试<br>date: 2020-09-30 20:18:32<br>tag: -hexo -test<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2></li>
+<li>测试<br>date: 2020-09-30 20:18:32<br>tag: </li>
+<li>hex</li>
+<li>he<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2></li>
 </ul>
 <p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
 <a id="more"></a>
