@@ -22,8 +22,7 @@
         <category>入门</category>
       </categories>
       <tags>
-        <tag>标签2</tag>
-        <tag>标签3</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -43,7 +42,8 @@
         <category>测试</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
+        <tag>hexo</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>
