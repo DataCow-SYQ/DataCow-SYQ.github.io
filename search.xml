@@ -28,7 +28,7 @@
   <entry>
     <title>我的第一篇博客文章</title>
     <url>/2020/09/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
+    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>&#160; &#160; &#160; &#160;<strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
 <a id="more"></a>
 <p>a: <font face="宋体" color=blue size=2>我是宋体，蓝色，尺寸为2</font><br>b: <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a><br><img src="C:/Users/DataCow/Desktop/1601526268(1).jpg" alt="任意文字"><br><img src="http://pic11.photophoto.cn/20090626/0036036341009653_b.jpg" width="251" height="350" ></p>
 <div align=left><img src="http://pic11.photophoto.cn/20090626/0036036341009653_b.jpg" width="50%" height="50%"></div>
@@ -42,8 +42,8 @@
         <category>测试</category>
       </categories>
       <tags>
-        <tag>hex</tag>
-        <tag>te</tag>
+        <tag>hexo</tag>
+        <tag>test</tag>
       </tags>
   </entry>
 </search>
