@@ -195,7 +195,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-02 10:52:28" itemprop="dateModified" datetime="2020-10-02T10:52:28+08:00">2020-10-02</time>
+                <time title="修改时间：2020-10-02 10:59:19" itemprop="dateModified" datetime="2020-10-02T10:59:19+08:00">2020-10-02</time>
               </span>
 
           <br>
@@ -204,7 +204,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>365</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -223,30 +223,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <center>准备工作：首先需要有Git、Node.js、GitHub</center>
-## Git下载安装教程：    ps:我勾选的是默认的Vim编辑器   最后会附上Vim基础操作
-https://blog.csdn.net/sanxd/article/details/82624127
-https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835
-## Node.js下载安装  
-[https://nodejs.org/en](https://nodejs.org/en)    点击  
-安装时一直next        安装好后可在终端查看版本node -v 和npm -v
-## GitHub   没有的自己去官网Sign up
-win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文) 
-之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！
-## Quick Start
+          <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">https://hexo.io/docs/server.html</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">https://hexo.io/docs/generating.html</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a></p>
+<h3 id="Run-server-1"><a href="#Run-server-1" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a></p>
 
       
     </div>
@@ -538,7 +529,7 @@ win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全�
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
