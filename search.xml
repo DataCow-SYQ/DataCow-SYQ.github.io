@@ -19,7 +19,7 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>入门</category>
+        <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -28,12 +28,12 @@
   <entry>
     <title>Windows系统Hexo+Github个人博客搭建（0Base0BugFullVersion）</title>
     <url>/2020/09/30/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<br><a href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a><br><a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&amp;seid=16816724917143934835">https://www.bilibili.com/video/BV1Fv411q7AN?from=search&amp;seid=16816724917143934835</a><br>Node.js下载安装<br><a href="https://nodejs.org/en">https://nodejs.org/en</a>  下载选LTS版本   安装时一直next，安装好后可在终端查看版本node -v 和npm -v  </p>
+    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a><a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a><br>Node.js下载安装：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本   安装时一直next，安装好后在终端查看版本node -v 和npm -v  </p>
 <a id="more"></a>
 <h3 id="正篇开始"><a href="#正篇开始" class="headerlink" title="正篇开始"></a>正篇开始</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！</p>
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -53,7 +53,7 @@
 <p><a href="https://hexo.io/docs/writing.html">Writing</a><br><a href="https://hexo.io/docs/server.html">https://hexo.io/docs/server.html</a><br><a href="https://hexo.io/docs/generating.html">https://hexo.io/docs/generating.html</a><br><a href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a><br><a href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a></p>
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
