@@ -27,7 +27,7 @@
   </entry>
   <entry>
     <title>Windows系统Hexo+Github个人博客搭建（0Base0BugFullVersion）</title>
-    <url>/2020/09/30/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <url>/2020/10/01/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a>     ps:安装时选择Vim编辑器<br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
 <a id="more"></a>
 <h3 id="本地搭建"><a href="#本地搭建" class="headerlink" title="本地搭建"></a>本地搭建</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！</p>
@@ -76,7 +76,7 @@
   </entry>
   <entry>
     <title>数据分析师养成计划</title>
-    <url>/2020/09/30/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E5%85%BB%E6%88%90%E8%AE%A1%E5%88%92/</url>
+    <url>/2020/10/09/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E5%85%BB%E6%88%90%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<p>Abilities:<br>1.统计学与概率论知识<br>2.SQL、Python、Excel、Tableau硬实力<br>3.商业思维、结构化思维、数据化思维、产品思维、逻辑思维、数据敏感度等软实力</p>
 <a id="more"></a>
 <h2 id="统计学与概率论知识（最后学）"><a href="#统计学与概率论知识（最后学）" class="headerlink" title="统计学与概率论知识（最后学）"></a>统计学与概率论知识（最后学）</h2><p>书与视频交叉验证相互的理解：《商务与经济统计》  <a href="https://www.bilibili.com/video/BV1i4411e7sT?from=search&seid=9148989492977205317">可汗学院的统计学视频</a>、<a href="https://www.douban.com/note/713490536/">视频笔记</a><br>统计学：统计抽样、假设检验原理、显著性检验(常见的有t检验 z检验等等)、p值、置信区间、点估计以及区间估计的方法<br>概率论：排列组合、条件概率、贝叶斯公式、随机过程</p>
