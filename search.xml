@@ -26,11 +26,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Windows系统Hexo+Github个人博客搭建（0Base0BugFullVersion）</title>
+    <url>/2020/09/30/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a><br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
+<a id="more"></a>
+<h3 id="正篇开始"><a href="#正篇开始" class="headerlink" title="正篇开始"></a>正篇开始</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！<br><img src="http://q.027cgb.com/633123/1602226574(1).jpg" /></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的第一篇博客文章</title>
     <url>/2020/09/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<center>This is a post about testing the basic syntax of markdown！</center>
 <a id="more"></a>
-## 第一章
+### 第一章
 &#160; &#160; &#160; &#160;**这是加粗的文字**
 *这是倾斜的文字*
 ***这是斜体加粗的文字**
@@ -41,7 +55,7 @@ b: <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
 <img src="http://pic11.photophoto.cn/20090626/0036036341009653_b.jpg" width="251" height="350" >
 <div align=left><img src="http://pic11.photophoto.cn/20090626/0036036341009653_b.jpg" width="50%" height="50%"></div>
 
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;align&quot;</span></span><br><span class="line"><span class="string">&#x27;bash&#x27;</span></span><br><span class="line">cn/<span class="string">&#x27;20090626/003603634&#x27;</span>1009653_b</span><br></pre></td></tr></table></figure>
 <p><a href="https://hexo.io/docs/writing.html">Writing</a><br><a href="https://hexo.io/docs/server.html">https://hexo.io/docs/server.html</a><br><a href="https://hexo.io/docs/generating.html">https://hexo.io/docs/generating.html</a><br><a href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a><br><a href="https://blog.csdn.net/sanxd/article/details/82624127">https://blog.csdn.net/sanxd/article/details/82624127</a></p>
@@ -52,20 +66,6 @@ b: <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
       <tags>
         <tag>hexo</tag>
         <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows系统Hexo+Github个人博客搭建（0Base0BugFullVersion）</title>
-    <url>/2020/09/30/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a><br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
-<a id="more"></a>
-<h3 id="正篇开始"><a href="#正篇开始" class="headerlink" title="正篇开始"></a>正篇开始</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！<br>img src=”<a href="http://q.027cgb.com/633123/1602226574(1).jpg&quot;&gt;">http://q.027cgb.com/633123/1602226574(1).jpg&quot;&gt;</a></div></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
