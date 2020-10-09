@@ -26,6 +26,37 @@
       </tags>
   </entry>
   <entry>
+    <title>Windows系统Hexo+Github个人博客搭建（0Base0BugFullVersion）</title>
+    <url>/2020/09/30/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a>     安装时选择Vim编辑器<br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
+<a id="more"></a>
+<h3 id="本地搭建"><a href="#本地搭建" class="headerlink" title="本地搭建"></a>本地搭建</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！</p>
+<h3 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h3><ol>
+<li>将博客部署到GitHub上公开使用(免费)，以后就通过GitHub的地址访问我们的博客      ①GitHub上Sign in后 点击右上角➕ 点击New repository (新建仓库) <img src="http://q.027cgb.com/633123/1602247195(1).jpg" />
+名字一定要对应且必须是.github.io   最后点击Create repository</li>
+<li>在blog目录下安装一个Git的部署插件，即在Git Bash里cd d:/blog切换到blog目录 → npm install –save hexo-deployer-git → ls查看当前目录文件 → vim _config.yml进入Vim编辑器      如下图所示<img src="http://q.027cgb.com/633123/1602247205(1).jpg" />
+之后ctrl+insert复制仓库地址，如下图所示（Vim与Windows交互：建议都是ctrl+insert复制，shift+insert粘贴）
+<img src="http://q.027cgb.com/633123/1602247222(1).jpg" />
+接着修改部署配置：在Vim编辑器里找到最后的Deployment，将里面的内容改为如下图所示，其中将复制的仓库地址shift+insert粘贴到repo后面（注意type repo branch的冒号后面都有一个空格），最后按esc 输入:wq回车 即可保存退出Vim   这样_config.yml文件的修改就完成了！
+<img src="http://q.027cgb.com/633123/1602247234(1).jpg" />
+hexo d部署到远程GitHub仓库     过程中会弹出如下框输入用户名密码后Login即可
+<img src="http://q.027cgb.com/633123/1602247257(1).jpg" />
+最后出现INFO Deploy done: git则表示部署成功
+然后刷新一下GitHub仓库，多了很多东西，这些都是博客生成的内容
+最后只要在网址栏输入仓库名datacow-syq.github.io就能直接进入博客啦!!!!
+</li>
+</ol>
+<hr>
+<p>以上内容参考视频： <a href="https://www.bilibili.com/video/BV1Yb411a7ty">https://www.bilibili.com/video/BV1Yb411a7ty</a> </p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的第一篇博客文章</title>
     <url>/2020/09/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<center>This is a post about testing the basic syntax of markdown！</center>
@@ -53,20 +84,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows系统Hexo+Github个人博客搭建（0Base0BugFullVersion）</title>
-    <url>/2020/09/30/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a><br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
-<a id="more"></a>
-<h3 id="正篇开始"><a href="#正篇开始" class="headerlink" title="正篇开始"></a>正篇开始</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！<br><img src="http://q.027cgb.com/633123/1602226574(1).jpg" /></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
