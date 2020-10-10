@@ -26,25 +26,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows系统Hexo+GitHub个人博客搭建（0Base0BugFullVersion）</title>
-    <url>/2020/10/01/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a>     ps:安装时选择Vim编辑器<br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
-<a id="more"></a>
-<h3 id="本地搭建"><a href="#本地搭建" class="headerlink" title="本地搭建"></a>本地搭建</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！</p>
-<h3 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h3><p>将博客部署到GitHub上公开使用(免费)，以后就通过GitHub的地址访问我们的博客<br>1.GitHub上Sign in后 点击右上角➕ 点击New repository (新建仓库)<br><img src="http://q.027cgb.com/633123/1602247195(1).jpg" /><br>名字一定要对应且必须是.github.io   最后点击Create repository<br>2.在blog目录下安装一个Git的部署插件，即在Git Bash里cd d:/blog切换到blog目录 → npm install –save hexo-deployer-git → ls查看当前目录文件 → vim _config.yml进入Vim编辑器      如下图所示<br><img src="http://q.027cgb.com/633123/1602247205(1).jpg" /><br>之后ctrl+insert复制仓库地址，如下图所示（Vim与Windows交互：建议都是ctrl+insert复制，shift+insert粘贴）<br><img src="http://q.027cgb.com/633123/1602247222(1).jpg" /><br>接着修改部署配置：在Vim编辑器里找到最后的Deployment，将里面的内容改为如下图所示，其中将复制的仓库地址shift+insert粘贴到repo后面（注意type repo branch的冒号后面都有一个空格），最后按esc 输入:wq回车 即可保存退出Vim   这样_config.yml文件的修改就完成了！<br><img src="http://q.027cgb.com/633123/1602247234(1).jpg" /><br>hexo d部署到远程GitHub仓库     过程中会弹出如下框输入用户名密码后Login即可<br><img src="http://q.027cgb.com/633123/1602247257(1).jpg" /><br>出现INFO Deploy done: git则表示部署成功</p>
-<p>然后刷新一下GitHub仓库，多了很多东西，这些都是博客生成的内容</p>
-<p>最后只要在网址栏输入仓库名datacow-syq.github.io就能直接进入博客啦!!!!</p>
-<hr>
-<p>以上内容参考视频： <a href="https://www.bilibili.com/video/BV1Yb411a7ty">https://www.bilibili.com/video/BV1Yb411a7ty</a> </p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我的第一篇博客文章</title>
     <url>/2020/09/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<center>This is a post about testing the basic syntax of markdown！</center>
@@ -75,6 +56,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Windows系统Hexo+GitHub个人博客搭建（0Base0BugFullVersion）</title>
+    <url>/2020/10/01/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>准备工作：首先需要有Git和Node.js软件以及GitHub官网Sign up<br>Git下载安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127">文章</a>  、 <a href="https://www.bilibili.com/video/BV1Fv411q7AN?from=search&seid=16816724917143934835">视频</a>     ps:安装时选择Vim编辑器<br>Node.js：<a href="https://nodejs.org/en">下载地址</a> 下载选LTS版本  安装一直next,安装好后在终端查看版本node -v和npm -v  </p>
+<a id="more"></a>
+<h3 id="本地搭建"><a href="#本地搭建" class="headerlink" title="本地搭建"></a>本地搭建</h3><p>win+r cmd ctrlshiftenter(管理员身份进入) → npm install -g hexo-cli(全局安装hexo博客框架，忽略WARN) → hexo -v(验证一下) → chdir(当前所处目录) → cd /(切换到根目录下) → d: (切换到D盘) → mkdir blog(新建blog文件夹) → cd blog(进入blog文件夹) → hexo init(初始化一个博客) → dir(看一下目录下生成了哪些东西) → hexo s(然后在浏览器localhost:4000打开，里面会自动生成一个Hello World的博文) → ctrl+c(断开) → hexo new ‘我的第一篇博客文章’ → cd source/_posts(切换到该目录) → dir(看是否有这篇博文)<br>之后点击桌面右键选择git bash here  先cd d:/blog/source/_posts 然后vim 我的第一篇博客文章.md(进入到Vim编辑器 写博文，按esc 输入:wq回车 即可保存退出Vim) → cd ../..(退回到blog目录) → hexo clean(清理一下) → hexo g(生成一下) → hexo s(重新再启动一下，localhost:4000刷新一下即可看到新写的博文)   此时本地的搭建已完成！</p>
+<h3 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h3><p>将博客部署到GitHub上公开使用(免费)，以后就通过GitHub的地址访问我们的博客<br>1.GitHub上Sign in后 点击右上角➕ 点击New repository (新建仓库)<br><img src="http://q.027cgb.com/633123/1602247195(1).jpg" /><br>名字一定要对应且必须是.github.io   最后点击Create repository<br>2.在blog目录下安装一个Git的部署插件，即在Git Bash里cd d:/blog切换到blog目录 → npm install –save hexo-deployer-git → ls查看当前目录文件 → vim _config.yml进入Vim编辑器      如下图所示<br><img src="http://q.027cgb.com/633123/1602247205(1).jpg" /><br>之后ctrl+insert复制仓库地址，如下图所示（Vim与Windows交互：建议都是ctrl+insert复制，shift+insert粘贴）<br><img src="http://q.027cgb.com/633123/1602247222(1).jpg" /><br>接着修改部署配置：在Vim编辑器里找到最后的Deployment，将里面的内容改为如下图所示，其中将复制的仓库地址shift+insert粘贴到repo后面（注意type repo branch的冒号后面都有一个空格），最后按esc 输入:wq回车 即可保存退出Vim   这样_config.yml文件的修改就完成了！<br><img src="http://q.027cgb.com/633123/1602247234(1).jpg" /><br>hexo d部署到远程GitHub仓库     过程中会弹出如下框输入用户名密码后Login即可<br><img src="http://q.027cgb.com/633123/1602247257(1).jpg" /><br>出现INFO Deploy done: git则表示部署成功</p>
+<p>然后刷新一下GitHub仓库，多了很多东西，这些都是博客生成的内容</p>
+<p>最后只要在网址栏输入仓库名datacow-syq.github.io就能直接进入博客啦!!!!</p>
+<hr>
+<p>以上内容参考视频： <a href="https://www.bilibili.com/video/BV1Yb411a7ty">https://www.bilibili.com/video/BV1Yb411a7ty</a> </p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据分析师养成计划</title>
     <url>/2020/10/09/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E5%85%BB%E6%88%90%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<p>Abilities:<br>1.统计学与概率论知识<br>2.SQL、Python、Excel、Tableau硬实力<br>3.商业思维、结构化思维、数据化思维、产品思维、逻辑思维、数据敏感度等软实力</p>
@@ -84,9 +84,9 @@
 <h2 id="技能（经常学-熟练度拉满）"><a href="#技能（经常学-熟练度拉满）" class="headerlink" title="技能（经常学   熟练度拉满）"></a>技能（经常学   熟练度拉满）</h2><ol>
 <li>SQL：<br>sql语句的熟练度拉满   直接决定工作效率              </li>
 </ol>
-<p><strong>《SQL必知必会》</strong>  工具书+刷题(1.leetcode数据库先集中攻破基础和中等难度  有难度  2.牛客 简单点 更符合中国人的使用习惯  3.<a href="https://igs.sqlzoo.net/wiki/SELECT_basics">sqlzoo</a>)<br>学习周期：一周  1.sql基础语句，理清基础逻辑还有常见的时间函数、字符函数、窗口函数、row_number等等的函数     2.锻炼取数逻辑<br>2. <strong>Tableau</strong>：<br>目前商业化中运用到的可视化工具最多的一个工具，学生能申请一年的免费试用，tableau官方网站学习有非常详尽的视频演示操作，还有技术社区，大牛会把自己的作品po到社区上来，是一个很好的提升数据可视化思维的途径，一个好的数据分析师是可以运用tableau来讲述一个完整的故事<br>需要了解如何跟数据可进行连接，如何制作图表以及dashboard来对数据做一个最好的可视化的展示，可视化无论呈现给业务方还是老板，都是十分重要的一环<br>类似软件还有FineBI、PowerBI等<br>3. Python：<br>关注数据处理的部分，三大库<strong>numpy、pandas、matplotlib</strong>；机器学习；十大算法(优缺点 应用场景 适用于什么样的数据集)   能手推公式更好   算法优化无严格要求；爬虫<br>4. Excel：<br><strong>《绝了！excel可以这样用》</strong> 快捷键+好用的功能和函数   熟练度和技巧同样直接决定工作效率<br>数据透视表  常用函数countif、sumif、vlookup等   基础图表的制作</p>
+<p><strong>《SQL必知必会》</strong>  工具书+刷题(1.leetcode数据库先集中攻破基础和中等难度  有难度  2.牛客 简单点 更符合中国人的使用习惯  3.<a href="https://igs.sqlzoo.net/wiki/SELECT_basics">sqlzoo</a>)<br>学习周期：一周  1.sql基础语句，理清基础逻辑还有常见的时间函数、字符函数、窗口函数、row_number等等的函数     2.锻炼取数逻辑<br>2. Tableau：<br>目前商业化中运用到的可视化工具最多的一个工具，学生能申请一年的免费试用，<strong>tableau</strong>官方网站学习有非常详尽的视频演示操作，还有技术社区，大牛会把自己的作品po到社区上来，是一个很好的提升数据可视化思维的途径，一个好的数据分析师是可以运用tableau来讲述一个完整的故事<br>需要了解如何跟数据可进行连接，如何制作图表以及dashboard来对数据做一个最好的可视化的展示，可视化无论呈现给业务方还是老板，都是十分重要的一环<br>类似软件还有FineBI、PowerBI等<br>3. Python：<br>关注数据处理的部分，三大库<strong>numpy、pandas、matplotlib</strong>；机器学习；十大算法(优缺点 应用场景 适用于什么样的数据集)   能手推公式更好   算法优化无严格要求；爬虫<br>4. Excel：<br><strong>《绝了！excel可以这样用》</strong> 快捷键+好用的功能和函数   熟练度和技巧同样直接决定工作效率<br>数据透视表  常用函数countif、sumif、vlookup等   基础图表的制作</p>
 <hr>
-<h2 id="商业思维（软实力，天天学两到三篇文章）"><a href="#商业思维（软实力，天天学两到三篇文章）" class="headerlink" title="商业思维（软实力，天天学两到三篇文章）"></a>商业思维（软实力，天天学两到三篇文章）</h2><p>网站：<strong>人人都是产品经理</strong> （有非常多的高质量的文章而且是可以落地执行的业务知识）<br>1.搜索关于<strong>指标</strong>相关的文章(来衡量或评价业务的现状)<br>2.搜索<strong>漏斗</strong>相关的文章(互联网行业现在进入到了下半场，当人口红利消失了以后，越来越多的公司开始考虑如何提高自己的转化，因此如何通过数据来精细化的运营漏斗的每一个环节，去提高每一个环节的转化率是我们现在越来越需要去思考的事情，比如给用户做分层：用户画像、生命周期)<br>数据分析和产品经理是分不开的，在这个网站上不仅能学习到一些非常高端前沿实用的业务知识，还能学习到一些数据分析的技巧<br>常见的衡量用户的三大类指标：<strong>黏性、活跃度、产出</strong>  （如果是一个电商app，更关注的就在于用户的产出复购等等；如果是一个社交app，关注的可能就在于活跃度或者是粘性）</p>
+<h2 id="商业思维（软实力，每天学两到三篇文章）"><a href="#商业思维（软实力，每天学两到三篇文章）" class="headerlink" title="商业思维（软实力，每天学两到三篇文章）"></a>商业思维（软实力，每天学两到三篇文章）</h2><p>网站：<strong>人人都是产品经理</strong> （有非常多的高质量的文章而且是可以落地执行的业务知识）<br>1.搜索关于<strong>指标</strong>相关的文章(来衡量或评价业务的现状)<br>2.搜索<strong>漏斗</strong>相关的文章(互联网行业现在进入到了下半场，当人口红利消失了以后，越来越多的公司开始考虑如何提高自己的转化，因此如何通过数据来精细化的运营漏斗的每一个环节，去提高每一个环节的转化率是我们现在越来越需要去思考的事情，比如给用户做分层：用户画像、生命周期)<br>数据分析和产品经理是分不开的，在这个网站上不仅能学习到一些非常高端前沿实用的业务知识，还能学习到一些数据分析的技巧<br>常见的衡量用户的三大类指标：<strong>黏性、活跃度、产出</strong>  （如果是一个电商app，更关注的就在于用户的产出复购等等；如果是一个社交app，关注的可能就在于活跃度或者是粘性）</p>
 <hr>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
 <li>结构化思维：<strong>《金字塔原理》</strong>     </li>
